@@ -8,10 +8,3 @@ A browser extension to apply a dark theme to websites. This extension allows use
 - Toggle button to switch the dark theme on and off.
 - Applies dark theme by default.
 
-## Installation
-
-### Chrome
-
-1. Clone or download this repository:
-   ```sh
-   git clone https://github.com/yourusername/dark-theme-extension.git
