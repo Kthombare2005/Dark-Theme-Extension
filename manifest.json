@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Dark Theme Converter",
+  "version": "1.0",
+  "description": "Convert websites to a dark theme",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/Icon.ico",
+      "48": "icons/Icon.ico",
+      "128": "icons/Icon.ico"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icons/Icon.ico",
+    "48": "icons/Icon.ico",
+    "128": "icons/Icon.ico"
+  }
+}
